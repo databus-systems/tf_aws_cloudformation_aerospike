@@ -1,4 +1,4 @@
-resource "aws_cloudformation_stack" "aerospike" {
+resource "aws_cloudformation_stack" "aerospike_new_vpc" {
 	count = "${var.new_vpc}"
     name = "${var.name}"
     template_url = "${var.template_url}"
@@ -16,7 +16,7 @@ resource "aws_cloudformation_stack" "aerospike" {
     }
 }
 
-resource "aws_cloudformation_stack" "aerospike" {
+resource "aws_cloudformation_stack" "aerospike_existing_vpc" {
 	count = "${var.new_vpc}"
     name = "${var.name}"
     template_url = "${var.template_url}"
