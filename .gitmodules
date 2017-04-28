@@ -1,0 +1,3 @@
+[submodule "aerospike-aws-cloudformation"]
+	path = aerospike-aws-cloudformation
+	url = https://github.com/aerospike/aws-cloudformation
