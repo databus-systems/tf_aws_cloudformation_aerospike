@@ -1,4 +1,4 @@
-variable "name" { default = "aerospike_stack"}
+variable "name" { default = "aerospike_cluster"}
 variable "template_url" {default = "https://s3.amazonaws.com/nonexistentbucket/aerospike.json"}
 variable "capabilities" { default = [ "CAPABILITY_IAM" ] }
 variable "keypair" {}
@@ -6,10 +6,10 @@ variable "permitssh" { default = "0.0.0.0/0" }
 variable "namespacefile" { default = "https://s3.amazonaws.com/nonexistentbucket/namespace.conf"}
 variable "new_vpc" {
 	description = "When set to true (default) deploys Aerospike in a new VPC"
-	default = false
+	default = true
 }
-variable "vpc_id" { default = "vpc0x1234"}
-variable "vpc_subnet_id" { default = "sub1245325"}
+variable "vpc_id" { default = "vpc-0000000"}
+variable "vpc_subnet_id" { default = "subnet-0000000"}
 variable "number_of_instances" { default = "2" }
 variable "instance_type" { default = "t2.micro" }
 variable "cloudwatch" {
