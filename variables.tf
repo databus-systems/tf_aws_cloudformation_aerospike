@@ -32,7 +32,7 @@ variable "public_zone" {}
 variable "aerospike_cli53_hostname" {}
 
 variable "aerospike_cluster_role_arn" {}
-variable "aerospike_cluster_instance_profile_arn" {} 
+variable "aerospike_cluster_instance_profile_arn" {}
 variable "aerospike_migration_queue_arn" {}
 variable "aerospike_security_group_ids" {}
 variable "aerospike_ami" {}
